@@ -9,4 +9,4 @@ abc = ab or bc or ac
 print("a равно b: ", ab)
 print("b равно c: ", bc)
 print("a равно c: ", ac)
-print('Есть одна пара совпадающbх чисел: ', abc)
+print('Есть одна пара совпадающих чисел: ', abc)
