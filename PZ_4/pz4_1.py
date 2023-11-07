@@ -8,7 +8,13 @@ while type(X) != float:
     except ValueError:
         print('Неправильно ввели!')
         X = input('Введите вещественное число: ')
-I = 12
+I = input('Введите количество итераций: ')
+while type(I) != int:
+    try:
+        I = int(I)
+    except ValueError:
+        print('Неправильно ввели!')
+        I = input('Введите вещественное число: ')
 def sin(X,I):
     S = 0
     for N in range(I):
