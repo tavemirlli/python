@@ -9,6 +9,6 @@ while type(N) != int:
         print('Неправильно ввели!')
         N = input('Введите целое число: ')
 for N in range(1, N+1):
-    S += N ** N
+    S = S + N ** N
 
 print('Cумма членов: ', S)
