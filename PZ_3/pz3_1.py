@@ -4,7 +4,7 @@ while type(a)!=int:
     try:
         a = int(a)
     except ValueError:
-        print('Неправильно ввели!')
+        print('Неправильно ввели! ')
         a = (input('Введите первое число: '))
 b = (input('Введите второе число: '))
 while type(b)!=int:
@@ -20,9 +20,9 @@ while type(c)!=int:
     except ValueError:
         print('Неправильно ввели!')
         c = (input('Введите третье число: '))
-ab = (a==b)
-bc = (b==c)
-ac = (a==c)
+ab = a == b
+bc = b == c
+ac = a == c
 abc = ab or bc or ac
 print("a равно b: ", ab)
 print("b равно c: ", bc)
