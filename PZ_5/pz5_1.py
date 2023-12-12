@@ -10,6 +10,7 @@ while type(a)!=int:
 d = sum(map(int, str(a)))
 s = 0
 while a > 0:
-    a -= d
+    a = a - d
+    d = sum(map(int, str(a)))
     s += 1
 print('Количество действий: ', s)
