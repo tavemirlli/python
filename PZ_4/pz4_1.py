@@ -24,4 +24,3 @@ def sin(X,I):
         S += c
     return S
 print('Результат: ', sin(X,I))
-print('Синус введенного числа: ', math.sin(X))
