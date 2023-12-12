@@ -4,7 +4,7 @@
 
 # Описание функции ShiftLeft3(A,B,C)
 def ShiftLeft3(A, B, C):
-    A, B, C = C, A, B
+    A, B, C = B, C, A
     return A, B, C
 
 A1 = input('Введите вещественное число A1: ')
@@ -39,12 +39,12 @@ while type(A1)!=float:
         print('Неправильно ввели! ')
         A1 = input('Введите вещественное число A1: ')
 B2 = input('Введите число B2: ')
-while type(A1)!=float:
+while type(B2)!=float:
     try:
-        A1 = float(A1)
+        A1 = float(B2)
     except ValueError:
         print('Неправильно ввели! ')
-        A1 = input('Введите вещественное число A1: ')
+        A1 = input('Введите вещественное число B2: ')
 C2 = input('Введите число C2: ')
 while type(A1)!=float:
     try:
