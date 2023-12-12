@@ -7,14 +7,50 @@ def ShiftLeft3(A, B, C):
     A, B, C = C, A, B
     return A, B, C
 
-A1 = input('Введите число A1: ')
-B1 = input('Введите число B1: ')
-C1 = input('Введите число C1: ')
+A1 = input('Введите вещественное число A1: ')
+while type(A1)!=float:
+    try:
+        A1 = float(A1)
+    except ValueError:
+        print('Неправильно ввели! ')
+        A1 = input('Введите вещественное число A1: ')
+B1 = input('Введите вещественное число B1: ')
+while type(B1)!=float:
+    try:
+        B1 = float(B1)
+    except ValueError:
+        print('Неправильно ввели! ')
+        B1 = input('Введите вещественное число B1: ')
+C1 = input('Введите вещественное число C1: ')
+while type(C1)!=float:
+    try:
+        C1 = float(C1)
+    except ValueError:
+        print('Неправильно ввели! ')
+        C1 = input('Введите вещественное число C1: ')
 A1, B1, C1 = ShiftLeft3(A1, B1, C1)
 print(f"После сдвига для первого набора: A1 = {A1}, B1 = {B1}, C1 = {C1}")
 
 A2 = input('Введите число A2: ')
+while type(A1)!=float:
+    try:
+        A1 = float(A1)
+    except ValueError:
+        print('Неправильно ввели! ')
+        A1 = input('Введите вещественное число A1: ')
 B2 = input('Введите число B2: ')
+while type(A1)!=float:
+    try:
+        A1 = float(A1)
+    except ValueError:
+        print('Неправильно ввели! ')
+        A1 = input('Введите вещественное число A1: ')
 C2 = input('Введите число C2: ')
+while type(A1)!=float:
+    try:
+        A1 = float(A1)
+    except ValueError:
+        print('Неправильно ввели! ')
+        A1 = input('Введите вещественное число A1: ')
 A2, B2, C2 = ShiftLeft3(A2, B2, C2)
 print(f"После сдвига для второго набора: A2 = {A2}, B2 = {B2}, C2 = {C2}")
