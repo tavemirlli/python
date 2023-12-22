@@ -9,8 +9,12 @@ while type(a)!=int:
         a = (input('Введите целое число: '))
 d = sum(map(int, str(a)))
 s = 0
-while a > 0:
-    a = a - d
-    d = sum(map(int, str(a)))
-    s += 1
-print('Количество действий: ', s)
+def func(a, d, s):
+    while a > 0:
+        a = a - d
+        d = sum(map(int, str(a)))
+        s += 1
+    return s
+m = func(a, d, s)
+
+print('Количество действий: ', m)
