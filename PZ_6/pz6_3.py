@@ -11,9 +11,12 @@ while type(N)!=int:
         N = (input('Введите целое число: '))
 for i in range (N):
     list2.append(randint(1,100))
-print(list2)
+print('Неотсортированный список: ', list2)
 new_element = list2[-1]
 sorted_list = sorted(list2[:-1])
+sorted_list1 = sorted(list2[:-1])
+sorted_list1.insert(N, new_element)
+print('Упорядоченный список с последним элементом не на своем месте: ',sorted_list1)
 index = 0
 while index < len(sorted_list) and sorted_list[index] < new_element:
     index += 1
