@@ -7,14 +7,11 @@ while type(a)!=int:
     except ValueError:
         print('Неправильно ввели! ')
         a = (input('Введите целое число: '))
-d = sum(map(int, str(a)))
-s = 0
-def func(a, d, s):
+def func(a):
+    s = 0
     while a > 0:
-        a = a - d
         d = sum(map(int, str(a)))
+        a = a - d
         s += 1
     return s
-m = func(a, d, s)
-
-print('Количество действий: ', m)
+print('Количество действий: ', func(a))
