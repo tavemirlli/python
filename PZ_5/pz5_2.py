@@ -41,16 +41,16 @@ while type(A1)!=float:
 B2 = input('Введите число B2: ')
 while type(B2)!=float:
     try:
-        A1 = float(B2)
+        B2 = float(B2)
     except ValueError:
         print('Неправильно ввели! ')
-        A1 = input('Введите вещественное число B2: ')
+        B2 = input('Введите вещественное число B2: ')
 C2 = input('Введите число C2: ')
 while type(A1)!=float:
     try:
-        A1 = float(A1)
+        С2 = float(A1)
     except ValueError:
         print('Неправильно ввели! ')
-        A1 = input('Введите вещественное число A1: ')
+        С2 = input('Введите вещественное число A1: ')
 A2, B2, C2 = ShiftLeft3(A2, B2, C2)
 print(f"После сдвига для второго набора: A2 = {A2}, B2 = {B2}, C2 = {C2}")
