@@ -19,7 +19,7 @@ if alluch == set():
 # все элементы каждого списка
 oneall = uch1.union(uch2, uch3)
 if oneall == set():
-    oneall = ('нет таковых')
+    oneall = 'нет таковых'
 
 noall = set(["картофель", "лук", "морковь", "горох", "капуста", "редис"]) - oneall
 if noall == set():
