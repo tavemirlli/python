@@ -14,7 +14,7 @@ uch3 = set(cltres["участок3"])
 # пересечение
 alluch = uch1.intersection(uch2, uch3)
 if alluch == set():
-    alluch = ('нет таковых')
+    alluch = 'нет таковых'
 
 # все элементы каждого списка
 oneall = uch1.union(uch2, uch3)
@@ -23,7 +23,7 @@ if oneall == set():
 
 noall = set(["картофель", "лук", "морковь", "горох", "капуста", "редис"]) - oneall
 if noall == set():
-    noall = ('нет таковых')
+    noall = 'нет таковых'
 
 print("Культуры, которые есть на каждом участке:", *alluch)
 print("Культуры, которые есть хотя бы на одном участке:", *oneall)
