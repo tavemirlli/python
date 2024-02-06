@@ -6,7 +6,6 @@
 # Сумма элементов:
 # Элементы до n-1 умножены на элемент n:
 
-import numpy as np
 from random import randint
 numbers = []
 n = int(input('Введите количество элементов: '))
@@ -14,16 +13,16 @@ for i in range(n):
     numbers.append(randint(-10,10))
 print(numbers)
 sum_numbers = sum(numbers)
-print(sum_numbers)
+print('Сумма элементов: ', sum_numbers)
 
 
 # умножаем элементы последовательности
 result_umn = []
 numbers1 = numbers[:-1]
 # print(numbers1)
-for i in range(0, len(numbers)):
-    result_umn.append(numbers[i] * 3)
-print(result_umn)
+for i in range(0, len(numbers1)):
+    result_umn.append(numbers1[i] * numbers[-1])
+print('Элементы до n-1 умножены на элемент n: ', result_umn)
 
 
 
