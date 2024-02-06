@@ -26,10 +26,10 @@ print('Элементы до n-1 умножены на элемент n: ', resu
 
 
 
-with open('processed_data.txt', 'w') as file:
+with open('pz11_1file.txt', 'w') as file:
     file.write(f'Исходные данные: {numbers}\n',)
     file.write(f'Количество элементов: {n}\n')
     file.write(f'Сумма элементов: {sum_numbers}\n')
     file.write(f'Элементы до n-1 умножены на элемент n: {result_umn}\n')
 
-print('Файл processed_data.txt успешно создан.')
+print('Файл pz11_1file.txt успешно создан.')
