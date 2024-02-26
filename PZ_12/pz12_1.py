@@ -2,17 +2,19 @@
 # coding: UTF-8
 # Вариант 19. В последовательности на n целых элементов найти среднее арифметическое элементов первой трети.
 
-numbers = []
-n = int(input('Введите количество элементов последовательности: '))
-numbers = [i for i in range (10)]
-print('Сгенерированная последовательность:', numbers)
-def average_first_third(number):
-    n = len(numbers)
-    first_third = numbers[:n // 3]  # первая треть последовательности
-    print(first_third)
-    avg = sum(first_third) / len(first_third) if len(first_third) > 0 else 0  # среднее арифметическое первой трети
-    return avg
+# Создаем последовательность из n элементов
+n = int(input('введите количество элементов последовательности: '))
+sequence = list(range(1, n+1))
+print('Последовательность: ', sequence)
 
-result = average_first_third(numbers)
-print(result)
+# Находим количество элементов в первой трети последовательности
+first_third1 = sequence[:n // 3]
+first_third = n // 3
+print('Первая треть последовательности: ', first_third1)
+
+# Находим среднее арифметическое элементов первой трети последовательности с помощью lambda функции
+avg = lambda seq: sum(seq[:first_third]) / len(seq[:first_third])
+result = avg(sequence)
+
+print(f"Среднее арифметическое элементов первой трети последовательности: {result}")
 
