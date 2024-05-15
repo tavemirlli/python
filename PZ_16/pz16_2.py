@@ -12,18 +12,14 @@ class Animal:
     def eat(self):
         print(f"{self.name} питается")
 
-
 class Dog(Animal):
     def bark(self):
         print(f"{self.name} гавкает")
-
 
 class Cat(Animal):
     def meow(self):
         print(f"{self.name} мурлыкает")
 
-
-# Пример использования и создания объектов
 d = Dog('Щеночек')
 c = Cat('Котенок')
 
