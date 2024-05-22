@@ -18,9 +18,9 @@ class Student:
         return all(grade == 5 for grade in self.grades)
 
 # Пример использования
-student1 = Student("Alice", "Smith", [5, 5, 5])
-student2 = Student("Bob", "Johnson", [3, 4, 4, 4])
-student3 = Student("Lisa", "Mariy", [5, 5, 5, 4])
+student1 = Student("Алиса", "Мир", [5, 5, 5])
+student2 = Student("Наташа", "Москов", [3, 4, 4, 4])
+student3 = Student("Андрей", "Железный", [5, 5, 5, 4])
 
 print(f"{student1.first_name} {student1.last_name} имеет средний бал равный {student1.sr()}")
 print(f"{student2.first_name} {student2.last_name} имеет средний бал равный {student2.sr()}")
@@ -31,9 +31,9 @@ print(f"{student2.first_name} {student2.last_name} является отличн
 print(f"{student3.first_name} {student3.last_name} является отличником: {student3.otl()}")
 
 print()
-student1 = ["Alice", "Smith", [5, 5, 5]]
-student2 = ["Bob", "Johnson", [3, 4, 4, 4]]
-student3 = ["Lisa", "Mariy", [5, 5, 5, 4]]
+student1 = ["Алиса", "Мир", [5, 5, 5]]
+student2 = ["Наташа", "Москов", [3, 4, 4, 4]]
+student3 = ["Андрей", "Железный", [5, 5, 5, 4]]
 
 def save_data(student, filename):
     with open(filename, 'wb') as file:
