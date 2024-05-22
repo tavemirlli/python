@@ -9,27 +9,23 @@ class Student:
         self.last_name = last_name
         self.grades = grades
 
-def sr(student):
-    return sum(student.grades) / len(student.grades)
+    def sr(self):
+        return sum(self.grades) / len(self.grades)
 
-
-def otl(student):
-    for grade in student.grades:
-        if grade < 5:
-            return False
-    return True
+    def otl(self):
+        return all(grade == 5 for grade in self.grades)
 
 # Пример использования
-student1 = Student("Alice", "Smith", [5, 5, 5])
-student2 = Student("Bob", "Johnson", [3, 4, 4, 4])
-student3 = Student("Lisa", "Mariy", [5, 5, 5, 4])
+student1 = Student("Алиса", "Мир", [5, 5, 5])
+student2 = Student("Наташа", "Москов", [3, 4, 4, 4])
+student3 = Student("Андрей", "Железный", [5, 5, 5, 4])
 
-print(f"{student1.first_name} {student1.last_name} имеет средний бал равный {sr(student1)}")
-print(f"{student2.first_name} {student2.last_name} имеет средний бал равный {sr(student2)}")
-print(f"{student3.first_name} {student3.last_name} имеет средний бал равный {sr(student3)}")
+print(f"{student1.first_name} {student1.last_name} имеет средний бал равный {student1.sr()}")
+print(f"{student2.first_name} {student2.last_name} имеет средний бал равный {student2.sr()}")
+print(f"{student3.first_name} {student3.last_name} имеет средний бал равный {student3.sr()}")
 
-print(f"\n{student1.first_name} {student1.last_name} является отличником: {otl(student1)}")
-print(f"{student2.first_name} {student2.last_name} является отличником: {otl(student2)}")
-print(f"{student3.first_name} {student3.last_name} является отличником: {otl(student3)}")
+print(f"\n{student1.first_name} {student1.last_name} является отличником: {student1.otl()}")
+print(f"{student2.first_name} {student2.last_name} является отличником: {student2.otl()}")
+print(f"{student3.first_name} {student3.last_name} является отличником: {student3.otl()}")
 
 
